@@ -12,7 +12,9 @@ header {
     color: #fff;
     padding: 2rem 0;
 }
-
+#about {
+    text-align: center; /* Center text horizontally */
+}
 header h1 {
     margin: 0;
     font-size: 2.5rem;
@@ -64,6 +66,4 @@ a:hover {
     vertical-align: middle; /* Center the image vertically */
 }
 
-#about {
-    text-align: center; /* Center text horizontally */
-}
+
