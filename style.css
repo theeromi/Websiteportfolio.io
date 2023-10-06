@@ -59,4 +59,11 @@ a:hover {
     display: block; /* Ensures the image is a block element */
     max-width: 100%; /* Keeps the image within the container's width */
     margin: 0 auto; /* Centers the image horizontally */
+    margin: 0 auto; /* Center the image horizontally */
+    max-height: 300px; /* Set a maximum height for the image if needed */
+    vertical-align: middle; /* Center the image vertically */
+}
+
+#about {
+    text-align: center; /* Center text horizontally */
 }
