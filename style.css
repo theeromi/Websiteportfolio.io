@@ -54,3 +54,9 @@ a {
 a:hover {
     text-decoration: underline;
 }
+/* In style.css */
+#about img {
+    display: block; /* Ensures the image is a block element */
+    max-width: 100%; /* Keeps the image within the container's width */
+    margin: 0 auto; /* Centers the image horizontally */
+}
