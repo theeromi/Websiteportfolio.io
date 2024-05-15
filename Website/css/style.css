@@ -1,0 +1,381 @@
+*{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    /*NAV BAR*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: #333;
+}
+
+#fix ul{width:100%;}
+
+li {
+    display:inline-block; 
+    width:24%;
+}
+#fix ul li{width:19%;}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    font-size:20px;
+    transition: all.5s ease; 
+    background-color: #111;
+}
+/*logo styling*/
+#main-header{
+    width:100%;
+    height:100px;
+    background-color:#333;
+    float:left;
+}
+#logo{
+    width:250px;
+    margin-top:10px;
+    float:left;  
+}
+
+#log{
+    font-size:28px;
+    font-weight:bold;
+    font-family:cursive;
+}
+#log a:link{
+  color:red;
+  text-decoration: none;
+}
+#log a:visited{
+  color:red;
+}
+#log a:hover{
+  color:red;
+}
+#log a:active{
+  color:red;
+}
+
+/*Search area styling*/
+#search{
+    width:650px;
+    float:left;
+    padding:20px;
+    margin-left:50px;
+}
+.search-area{
+   width: 95%;
+    height:50px;
+    background-color:#fff;
+    border:none;
+    border-radius:20px;
+    float:left; 
+    padding-left:15px;
+}
+.searchbtn{
+    width:100px;
+    height:50px;
+    border-radius:15px;
+    border:none;
+    color:#fff;
+    background:green;
+    margin-left:-100px;
+}
+/*User menu*/
+#user-menu{
+    width:300px;
+    float:right;
+    margin-top:20px;
+}
+/*This is for list styling*/
+#user-menu li{
+    float:left;
+    width:140px;
+    text-align:center;
+    list-style:none;
+    font-size:25px;
+    /*border-left:1px solid black;*/
+}
+#user-menu li:hover{
+    font-size:30px;
+    transition: all.5s ease;
+}
+body{
+
+    background-color: white;
+}
+h1{
+    text-align:center;
+    font-family:tahoma;
+}
+input{
+    border-radius: 20px;
+}
+
+#wrapper{ font-family:tahoma;height:1550px;}
+#wrap{font-family:tahoma;height:750px;}
+
+.container{
+    width:95%;
+    margin:0 auto;
+
+}
+/*Image slider*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+
+
+
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+} 
+
+    /*Products Heading*/
+    #heading-block{
+        width:100%;
+        height:auto;
+        float:left;
+        color:black;
+        font-size: 22px;
+    }
+    #heading-block h2{
+        line-height: 35px;
+        border-left: 20px solid green;
+        padding-left: 10px;
+    }
+#heading-products{
+        width:100%;
+        height:auto;
+        float:left;
+        color:black;
+        font-size: 22px;
+    }
+    #heading-products h2{
+        line-height: 35px;
+        border-left: 20px solid green;
+        padding-left: 10px;
+    }
+
+            /*Category boxes*/
+#catbox{width:100%;}
+#catbox div{box-sizing: border-box;width:24%;}
+.catbox{
+    width:235px;
+    height:235px;
+    float:left;
+    overflow:hidden;  
+    position:relative;
+     
+}
+.catbox img{
+    max-width: 100%;
+}
+.catbox:hover img{
+    transform:scale(1.1,1.1);
+}
+    /*This is for products*/
+    .prod-box{
+        width:235px;
+        height:300px;
+        overflow: hidden;
+        margin:0 20px 30px 0;
+    }
+    .prod-box>img{
+        max-width: 100%
+    }
+    /*table*/
+table{
+  width: 100%;
+}
+.table_style{
+  color:green;
+}
+.table_style2{
+
+  color:blue;
+}
+.table_style3{
+
+  color:black;
+}
+.table_style4{
+
+  color:grey;
+}
+
+  /*Contact Form*/
+
+
+.contact input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.contact input[type=submit] {
+    background-color: green;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.contact {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+#bo{
+    margin: 0;
+    padding: 0;
+    background-image: url("pics/image.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+
+}
+.login-box{
+    width: 320px;
+    height: 420px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.login-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login-box input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.login-box input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.login-box input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+.login-box a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+.login-box a:hover
+{
+    color: #39dc79;
+}
+/*-----Footer------*/
+.footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #222;
+   color: white;
+   text-align: center;
+}
+.footer a{
+  color:white;
+  text-decoration: none;
+}
+.footer a:hover{color:red;text-decoration: underline;}
+#email{
+  text-align: center;
+}
+
