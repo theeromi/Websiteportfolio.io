@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romain Tomlinson - CS 499 ePortfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .profile-img {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: background 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #1abc9c;
+            border-radius: 5px;
+        }
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        section {
+            margin-bottom: 40px;
+            text-align: left;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #1abc9c;
+            padding-bottom: 5px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #1abc9c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #16a085;
+        }
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .image-gallery img {
+            width: 250px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image/profilepic.jpeg" alt="Profile Picture" class="profile-img">
+        <h1>Welcome to My ePortfolio</h1>
+        <p>Showcasing my expertise in software engineering, algorithms, and databases.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="artifacts.html">Artifacts</a></li>
+            <li><a href="code_review.html">Code Review</a></li>
+            <li><a href="resume.html">Resume & Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="software-design">
+            <h2>Software Design & Engineering - Inventory Management System</h2>
+            <p>The Inventory Management System is a mobile application developed as part of the CS 360 - Mobile Architecture course in January 2024. The application was designed to help users track and manage inventory efficiently. It features user authentication, inventory tracking, and real-time database integration.</p>
+        
+        <h2>Justification for Inclusion</h2>
+        <p>This artifact was selected because it demonstrates my ability to develop scalable mobile applications using industry-standard tools and frameworks. The enhancements made to this application significantly improved its functionality and usability in the following ways:</p>
+        
+        <ul>
+            <li><strong>Software Engineering & Design:</strong> The project was refactored using Model-View-Controller (MVC) architecture, improving maintainability and scalability.</li>
+            <li><strong>Algorithms & Data Structures:</strong> A binary search algorithm was implemented to optimize inventory lookups, reducing search time and improving efficiency.</li>
+            <li><strong>Database Integration:</strong> The local SQLite database was replaced with Firebase Firestore, enabling real-time inventory updates and secure authentication with Firebase Authentication.</li>
+        </ul>
+        
+        <p>These enhancements highlight my skills in mobile application development, UI/UX design, database management, and algorithm optimization.</p>
+        
+        <h2>Reflection on the Enhancement Process</h2>
+        <p>Enhancing this artifact allowed me to apply best practices in mobile application development, while also deepening my understanding of real-time database interactions and secure authentication mechanisms. Some key takeaways from this process include:</p>
+        
+        <ul>
+            <li><strong>Learning Outcome:</strong> Implementing Firebase authentication required me to understand token-based authentication and secure login handling in mobile applications.</li>
+            <li><strong>Challenges Faced:</strong> Integrating Firestore required modifying existing database queries and learning how to structure real-time cloud-based data.</li>
+            <li><strong>Feedback Incorporation:</strong> Based on peer and instructor feedback, I refined the UI for better accessibility and usability, making navigation more intuitive.</li>
+            <li><strong>Course Outcomes Met:</strong> The enhancement process reinforced skills in mobile application development, database management, and algorithm optimization, all of which are critical in software engineering and architecture.</li>
+        </ul>
+            <div class="image-gallery">
+                <img src="image/inventory.png" alt="Inventory Management App UI">
+            </div>
+            <h3>Enhancements:</h3>
+            <ul>
+                <li>Implemented <strong>Firebase Authentication</strong> for secure user login.</li>
+                <li>Refactored architecture to use <strong>Model-View-Controller (MVC)</strong> principles.</li>
+                <li>Improved <strong>UI/UX design</strong> for a more intuitive user experience.</li>
+            </ul>
+            <a href="artifacts.html" class="btn">View Enhancements</a>
+        </section>
+        
+        <section id="algorithms">
+            <h2>Algorithms & Data Structures - Inventory Management System</h2>
+            <p>Optimized data retrieval and search functionality within the inventory system.</p>
+            <h3>Enhancements:</h3>
+            <ul>
+                <li>Implemented a <strong>Binary Search Algorithm</strong> for faster inventory lookups.</li>
+                <li>Optimized sorting and filtering operations for better performance.</li>
+            </ul>
+        </section>
+        
+        <section id="database">
+            <h2>Databases - QuantigrationUpdates MySQL Database</h2>
+            <p>The <strong>QuantigrationUpdates Database</strong> was developed during the <strong>DAD 220 - Databases</strong> course in June 2023. This project involved designing and implementing a <strong>relational database system</strong> for structured business data management. It includes <strong>CRUD operations, SQL indexing, and data security features</strong>.</p>
+
+    <h3>Justification for Inclusion</h3>
+    <p>This artifact was chosen because it demonstrates my ability to <strong>design, optimize, and secure database systems</strong>. The enhancements made showcase skills in:</p>
+    <ul>
+        <li><strong>Database Optimization:</strong> Implemented <strong>SQL indexing</strong> to enhance query performance and reduce retrieval time.</li>
+        <li><strong>NoSQL Integration:</strong> Integrated <strong>MongoDB</strong> to handle unstructured customer feedback data, improving data flexibility.</li>
+        <li><strong>Web-Based Interface:</strong> Developed a <strong>Node.js web interface</strong> to interact with the database, demonstrating <strong>full-stack development capabilities</strong>.</li>
+        <li><strong>Security Enhancements:</strong> Used <strong>prepared statements</strong> to prevent <strong>SQL injection attacks</strong>, improving database security.</li>
+    </ul>
+
+    <h3>Reflection on the Enhancement Process</h3>
+    <p>Improving this artifact strengthened my knowledge of <strong>relational and non-relational database structures</strong> and their real-world applications. Some key insights include:</p>
+    <ul>
+        <li><strong>Learning Outcome:</strong> Understanding the performance impact of <strong>SQL indexing</strong> and how it improves large-scale data retrieval.</li>
+        <li><strong>Challenges Faced:</strong> Integrating <strong>NoSQL with MySQL</strong> required designing a hybrid architecture that balances <strong>structured and unstructured data</strong>.</li>
+        <li><strong>Feedback Incorporation:</strong> After testing the database performance, I optimized <strong>query structures</strong> based on real-world use cases.</li>
+        <li><strong>Course Outcomes Met:</strong> These enhancements helped me gain practical experience in <strong>database optimization, security implementation, and web-based database management</strong>.</li>
+    </ul>
+            <h3>Enhancements:</h3>
+            <ul>
+                <li>Implemented <strong>SQL Indexing</strong> for faster queries.</li>
+                <li>Integrated <strong>MongoDB</strong> for unstructured customer feedback.</li>
+                <li>Developed a <strong>web-based interface</strong> using Node.js & MySQL.</li>
+                <li>Added <strong>prepared statements</strong> to prevent SQL injection attacks.</li>
+            </ul>
+            <a href="artifacts.html" class="btn">View Enhancements</a>
+
+            <div class="image-gallery">
+                <img src="image/crud.png" alt="CRUD Database Schema">
+                <img src="image/rma.png" alt="RMA Database Schema">
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Romain Tomlinson | <a href="mailto:consultromain@gmail.com">Contact Me</a></p>
+    </footer>
+</body>
+</html>
