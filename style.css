@@ -1,68 +1,141 @@
-/* Add your CSS styles here */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    line-height: 1.6; /* Improves readability */
 }
 
+/* Header */
 header {
     text-align: center;
     background-color: #333;
     color: #fff;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
 }
-#about {
-    text-align: center; /* Center text horizontally */
-}
+
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 2rem; /* Scales better on mobile */
+}
+
+/* Navigation */
+nav {
+    background-color: #444;
+    padding: 0.5rem 1rem;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
-    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping on small screens */
 }
 
 nav li {
-    display: inline;
-    margin-right: 20px;
+    margin: 0.5rem;
 }
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-weight: bold;
+    padding: 0.5rem 1rem;
+    display: block; /* Ensures proper spacing */
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
+nav a:hover {
+    background: #1abc9c;
+}
+
+/* Section Styling */
 section {
-    padding: 2rem;
+    padding: 2rem 5%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
+/* About Section */
+#about {
+    text-align: center;
+}
+
+#about img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 8px;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem;
     background-color: #333;
     color: #fff;
 }
+
+/* Links */
 a {
     text-decoration: none;
-    color: #0074D9; /* Change the color to your preference */
+    color: #0074D9;
 }
 
 a:hover {
     text-decoration: underline;
 }
-/* In style.css */
-#about img {
-    display: block; /* Ensures the image is a block element */
-    max-width: 100%; /* Keeps the image within the container's width */
-    margin: 0 auto; /* Centers the image horizontally */
-    max-height: 300px; /* Set a maximum height for the image if needed */
-    vertical-align: middle; /* Center the image vertically */
+
+/* 🔹 Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    header {
+        font-size: 1.2rem;
+        padding: 1.5rem 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 0.5rem 0;
+    }
+
+    section {
+        padding: 1.5rem 8%;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    #about img {
+        max-height: 250px; /* Adjust height for smaller screens */
+    }
 }
 
+@media (max-width: 480px) {
+    header {
+        font-size: 1rem;
+        padding: 1rem;
+    }
 
+    nav a {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 1rem 5%;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
