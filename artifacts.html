@@ -155,16 +155,43 @@
             <a href="https://github.com/theeromi/CS-499-Computer-Science-Capstone/tree/Enhancement-one-Software-Engineering-and-Design" class="btn" target="_blank">View Enhancements on Github</a>
         </section>
         
-        <section id="algorithms">
-            <h2>Algorithms & Data Structures - Inventory Management System</h2>
-            <p>Optimized data retrieval and search functionality within the inventory system.</p>
-            <h3>Enhancements:</h3>
-            <ul>
-                <li>Implemented a <strong>Binary Search Algorithm</strong> for faster inventory lookups.</li>
-                <li>Optimized sorting and filtering operations for better performance.</li>
-            </ul>
-            <a href="https://github.com/theeromi/CS-499-Computer-Science-Capstone/tree/Enhancement-Two--Algorithms-and-Data-Structures" class="btn" target="_blank">View Enhancements on Github</a>
-        </section>
+       <section id="algorithms">
+    <h2>Algorithms & Data Structures - Inventory Management System</h2>
+
+    <h3>Artifact Overview</h3>
+    <p>The artifact is an Android-based inventory management application originally created during CS-360. It allows users to manage items in a database with the ability to add, edit, view, and delete records. The app initially stored data locally using SQLite and featured a user authentication system and permission prompt for SMS notifications. It has since been enhanced to use Firebase Realtime Database instead of a local SQLite database, improving scalability and enabling real-time updates.</p>
+
+    <h3>Justification for Inclusion</h3>
+    <p>This artifact is included in my ePortfolio to highlight my skills in applying data structures and algorithms in a practical setting. Specifically, it demonstrates:</p>
+    <ul>
+        <li>Use of arrays and cursors to manage inventory data</li>
+        <li>Integration of a binary search algorithm to optimize item retrieval</li>
+        <li>Implementation of sorting algorithms (e.g., merge sort) for improved user navigation</li>
+        <li>Use of HashMap for efficient access to item details</li>
+    </ul>
+    <p>To optimize data handling and retrieval from Firebase, I converted raw item lists into structured <code>InventoryItem</code> objects, applied a custom merge sort to organize inventory by name, and used binary search for fast lookup. I also implemented a HashMap-based cache for efficient access by item name. These enhancements highlight my proficiency in selecting and applying appropriate data structures for performance and usability.</p>
+
+    <h3>Alignment with Learning Outcomes</h3>
+    <p>This enhancement aligns with the course outcome:</p>
+    <blockquote>
+        "Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution..."
+    </blockquote>
+    <p>By integrating optimized search and sorting mechanisms, I demonstrated my ability to choose the right algorithmic approach based on data and usage context. I also showcased the ability to design efficient client-side algorithms that work seamlessly with cloud-based NoSQL databases like Firebase, balancing latency and user responsiveness.</p>
+
+    <h3>Challenges Faced and Problem Solving</h3>
+    <p>While enhancing the app, I deepened my understanding of algorithm performance trade-offs. For example, using a HashMap significantly reduced lookup time for frequently accessed items. The biggest challenge was restructuring the data retrieval flow without breaking existing logic, particularly in the <code>ItemAdapter</code> and <code>DataDisplayActivity</code> classes. Integrating sorting and searching logic with Firebase required careful transformation of Firestore documents into usable data structures.</p>
+    <p>Another challenge was maintaining UI responsiveness while applying sorting algorithms and converting between <code>Item</code> and <code>InventoryItem</code> objects. I also applied defensive programming techniques to ensure that sorting or searching on an empty dataset would not crash the app. Overall, these enhancements improved both my coding efficiency and problem-solving mindset.</p>
+
+    <h3>Enhancements:</h3>
+    <ul>
+        <li>Implemented a <strong>Binary Search Algorithm</strong> for faster inventory lookups</li>
+        <li>Applied <strong>custom merge sort</strong> for sorting inventory data</li>
+        <li>Utilized a <strong>HashMap-based cache</strong> for fast item access</li>
+        <li>Enhanced UI responsiveness while maintaining real-time data integrity</li>
+    </ul>
+    <a href="https://github.com/theeromi/CS-499-Computer-Science-Capstone/tree/Enhancement-Two--Algorithms-and-Data-Structures" class="btn" target="_blank">View Enhancements on GitHub</a>
+</section>
+
         
         <section id="database">
             <h2>Databases - QuantigrationUpdates MySQL Database</h2>
